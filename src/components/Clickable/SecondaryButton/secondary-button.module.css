@@ -1,0 +1,24 @@
+.secondaryButton {
+  position: relative;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.secondaryButton::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  border-radius: inherit;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.secondaryButton:hover::before {
+  opacity: 1;
+}

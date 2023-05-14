@@ -1,0 +1,32 @@
+.loadingSpinner {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loadingSpinnerInner {
+  width: 100%;
+  height: 100%;
+  border: 0.3rem solid lightgray;
+  border-radius: 50%;
+  border-top-color: #332e54;
+  border-bottom-color: #332e54;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(360deg);
+  }
+
+  50% {
+    transform: scale(0.5) rotate(-360deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}

@@ -1,0 +1,66 @@
+.popularProductCard {
+  padding-bottom: 5vh;
+  position: relative;
+  width: 100%;
+}
+
+.cardContent {
+  background-color: #212121;
+  position: absolute;
+  padding: 2rem 2rem 5vh;
+  width: 100%;
+  bottom: 0;
+}
+
+.viewButton {
+  color: white;
+  padding: 0.8rem;
+  width: 100%;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.viewButton:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.popularProductList {
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  overflow-x: scroll;
+  overflow: auto;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.popularProductList::-webkit-scrollbar {
+  background-color: transparent;
+  height: 6px;
+}
+
+.popularProductList::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.popularProductListItem {
+  min-width: 100%;
+  float: left;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .popularProductListItem {
+    padding: 1px;
+    min-width: 50%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .popularProductListItem {
+    min-width: 33.3333%;
+  }
+}

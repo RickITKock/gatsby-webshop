@@ -1,0 +1,28 @@
+.roundedButton {
+  position: relative;
+  border-color: black;
+  background-color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  border-radius: 50rem;
+}
+
+.roundedButton::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: black;
+  /* background-image: linear-gradient(to bottom right, #5D503B 0%, #807259 70%); */
+  z-index: -1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  border-radius: 50rem;
+}
+
+.roundedButton:hover::before {
+  opacity: 1;
+}

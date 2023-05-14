@@ -1,0 +1,13 @@
+.RemoveButtonSmallScreen {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .RemoveButtonLargeScreen {
+    display: none;
+  }
+
+  .RemoveButtonSmallScreen {
+    display: block;
+  }
+}

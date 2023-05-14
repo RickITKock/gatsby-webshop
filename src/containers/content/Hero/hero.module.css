@@ -1,0 +1,238 @@
+/* .heroContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+} */
+
+.heroContainer {
+  height: calc(100vh - 6.1rem);
+}
+
+.hero {
+  height: 100%;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #332E54, black);
+  opacity: 0.7;
+}
+
+.heroContainer::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.heroClipped {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  animation: slideFromRight 1s forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1);
+}
+
+.heroTextBox {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5;
+  color: white /* #333 */;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.subHeadline {
+  letter-spacing: 2px;
+  font-size: 6rem;
+  opacity: 0;
+  animation: fadeUp 0.5s forwards;
+  font-weight: 900;
+  animation-delay: 1.5s;
+}
+
+.headline {
+  opacity: 0;
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  animation: scale 0.5s forwards;
+  animation-delay: 1s;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.seperator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seperatorBrand {
+  opacity: 0;
+  animation: appear 2s forwards;
+  animation-delay: 1.9s;
+}
+
+.line {
+  width: 100%;
+  max-width: 10rem;
+  height: 1px;
+  background-color:white;
+  position: relative;
+  animation: grow 2s forwards;
+  animation-delay: 1.9s;
+  opacity: 0;
+}
+
+.lineLeft::before,
+.lineRight::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.6rem solid transparent;
+  animation: grow 0.5s forwards;
+  animation-delay: 2.2s;
+  opacity: 0;
+}
+
+.lineRight::before {
+  border-right-color: white;
+  right: -1px;
+}
+
+.lineLeft::before {
+  border-left-color: white;
+  left: -1px;
+}
+
+.singleAnimation {
+  opacity: 0;
+  animation: fadeDown 0.5s forwards;
+  animation-delay: 2.5s;
+}
+
+.firstLetter {
+  background-color: white  /*linear-gradient(to left, #332e54, white)*/;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.subTitle {
+  font-size: 2rem;
+}
+
+.shopUspSection {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Small devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  .heroClipped {
+    width: 100vw;
+    height: 100vh;
+    clip-path: none;
+    animation: slideIn 1s forwards;
+    animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1);
+  }
+
+  h5 {
+    font-size: 0.94rem;
+  }
+  h1 {
+    font-size: 1.88rem;
+  }
+  h6 {
+    font-size: 0.75rem;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

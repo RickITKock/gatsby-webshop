@@ -1,0 +1,22 @@
+.LineItem {
+  --transitionDelay: 500ms;
+}
+
+/* .LineItemList .LineItem:nth-child(n+0) {
+  animation-delay: calc(var(--transitionDelay) * n);
+} */
+
+.LineItem {
+  transform-style: flat;
+  animation: flip-and-fade-in 0.5s forwards;
+}
+
+@keyframes flip-and-fade-in {
+  0% {
+    transform: rotateX(90deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}

@@ -1,0 +1,59 @@
+.stayConnectedRow {
+  /* background-color: #F2F2F2; */
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
+.companyFooterContent {
+  background-color: #212121;
+}
+
+.footerList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerList li {
+  font-size: 1.6rem;
+  line-height: 1.8em;
+  color: #d4d4d4;
+}
+
+.backToTopButton, .footerColumnLabel {
+  color: #d4d4d4;
+}
+
+.footerColumnLabel {
+  text-align: left;
+}
+
+.footerLink {
+  color: #d4d4d4;
+  transition: color 0.5s;
+}
+
+.backToTopButton {
+  width: 7rem;
+  height: 7rem;
+  background-color: #212121;
+  position: absolute;
+  top: -6rem;
+  transform: translateY(50%);
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.backToTopButton:hover, .footerLink:hover {
+  color: white;
+}
+
+.divider {
+  z-index: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.03) 3px,
+    transparent
+  );
+}

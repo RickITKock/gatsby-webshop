@@ -1,0 +1,26 @@
+.productCardTitle {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Josefin Sans";
+}
+
+.productImage {
+  overflow: hidden;
+}
+
+.productImage .cardImageZoomIn {
+  -webkit-transition: transform 0.8s ease 0s;
+  -moz-transition: transform 0.8s ease 0s;
+  -ms-transition: transform 0.8s ease 0s;
+  -o-transition: transform 0.8s ease 0s;
+  transition: transform 0.8s ease 0s;
+  vertical-align: middle;
+}
+
+.productImageContainer:hover .productImage .cardImageZoomIn {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}

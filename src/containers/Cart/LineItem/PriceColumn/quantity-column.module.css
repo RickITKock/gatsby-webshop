@@ -1,0 +1,20 @@
+/* Dropdown Button */
+.DropdownToggle {
+  background-color: #f0ede5;
+  color: black;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50rem;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+
+/* Dropdown button on hover & focus */
+/* We need to do something about outline 0. Replace it with something visual. */
+.DropdownToggle:hover,
+.DropdownToggle:focus {
+  background-color: #d9d3bf;
+  outline: 0;
+}

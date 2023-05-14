@@ -1,0 +1,23 @@
+.dropdownToggle {
+  border: 0;
+  border-radius: 5px;
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
+  color: #878685;
+}
+
+/* Dropdown button on hover & focus */
+/* We need to do something about outline 0. Replace it with something visual. */
+.dropdownToggle:hover,
+.dropdownToggle:focus {
+  outline: 0;
+}
+
+.dropdownToggleText {
+  font-family: Sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #878685;
+  font-size: 0.78rem;
+}

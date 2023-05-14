@@ -1,0 +1,38 @@
+header {
+  backdrop-filter: blur(8px);
+  position: sticky;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+
+.headerItem, nav a {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition: color 0.5s;
+}
+
+.lightThemedLink {
+  color: #515154;
+}
+
+.headerItem:hover {
+  cursor: pointer;
+}
+
+.lightThemedLink:hover {
+  color: black;
+}
+
+.darkThemedLink {
+  color: #f5f5f7;
+}
+
+.darkThemedLink:hover {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.markdown p,
+.markdown li {
+  font-size: 1.6rem;
+}
+
+.blogPost ol, .blogPost ul {
+  padding-left: 2em;
+}
+
+.socialMediaIcon {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* Small devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  .markdown p,
+  .markdown li {
+    font-size: 1.8rem;
+    word-spacing: 0.45rem;
+  }
+
+  .socialMediaIcon {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+}

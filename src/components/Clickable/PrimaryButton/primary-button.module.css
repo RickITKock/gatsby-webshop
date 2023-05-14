@@ -1,0 +1,26 @@
+.primaryButton {
+  position: relative;
+  border-color: #332e54;
+  background-image: linear-gradient(to bottom right, #5a5194 0%, #332e54 70%);
+  z-index: 1;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+.primaryButton::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #332e54;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  border-radius: 0.5rem;
+}
+
+.primaryButton:hover::before {
+  opacity: 1;
+}

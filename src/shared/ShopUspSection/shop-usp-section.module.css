@@ -1,0 +1,26 @@
+.uspHeadingText {
+  background: -webkit-linear-gradient(#5a5194, #332e54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.path {
+  stroke-width: 2;
+}
+
+.mainStop {
+  stop-color: #5a5194;
+}
+
+.altStop {
+  stop-color: #332e54;
+}
+
+.uspIconBackground {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
